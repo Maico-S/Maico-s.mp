@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Manutenção de Impressoras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Manutenção de Impressoras</h1>
+        
+        <h2>Adicionar Impressora</h2>
+        <form id="addPrinterForm">
+            <label for="printerID">ID da Impressora:</label>
+            <input type="text" id="printerID" required>
+            <label for="printerModel">Modelo:</label>
+            <input type="text" id="printerModel" required>
+            <label for="printerLocation">Localização:</label>
+            <input type="text" id="printerLocation" required>
+            <button type="submit">Adicionar Impressora</button>
+        </form>
+
+        <h2>Lista de Impressoras</h2>
+        <table id="printerTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Modelo</th>
+                    <th>Localização</th>
+                    <th>Última Manutenção</th>
+                    <th>Próxima Manutenção</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Conteúdo gerado pelo JavaScript -->
+            </tbody>
+        </table>
+
+        <h2>Registrar Manutenção</h2>
+        <form id="maintenanceForm">
+            <label for="printerSelect">Selecionar Impressora:</label>
+            <select id="printerSelect"></select>
+            <label for="maintenanceDate">Data da Manutenção:</label>
+            <input type="date" id="maintenanceDate" required>
+            <label for="maintenanceType">Tipo de Manutenção:</label>
+            <input type="text" id="maintenanceType" required>
+            <label for="maintenanceNotes">Observações:</label>
+            <input type="text" id="maintenanceNotes" required>
+            <button type="submit">Registrar Manutenção</button>
+        </form>
+
+        <h2>Alertas de Manutenção</h2>
+        <ul id="alertsList">
+            <!-- Conteúdo gerado pelo JavaScript -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
